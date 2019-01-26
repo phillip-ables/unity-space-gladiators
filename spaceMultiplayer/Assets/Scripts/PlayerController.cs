@@ -53,10 +53,10 @@ public class PlayerController : MonoBehaviour {
         //calculate camera rotation as a 3D vector
         float _xRot = Input.GetAxisRaw("Mouse Y");
 
-        Vector3 _cameraRotation = new Vector3(_xRot, 0f, 0f) * lookSensitivity;
+        float _cameraRotationX = _xRot * lookSensitivity;
 
         //Apply rotation
-        motor.CameraRotate(_cameraRotation);
+        motor.CameraRotate(_cameraRotationX);
 
         Vector3 _thrusterForce = Vector3.zero;
         // Apply thruster force

@@ -564,6 +564,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   lookSensitivity: 3
+  thrusterForce: 1300
+  jointSpring: 20
+  jointMaxForce: 60
 --- !u!114 &114341176724529574
 MonoBehaviour:
   m_ObjectHideFlags: 1
