@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(ConfigurableJoint))]
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour {
     [SerializeField]
@@ -10,10 +11,12 @@ public class PlayerController : MonoBehaviour {
     private float thrusterForce = 1000f;
 
     private PlayerMotor motor;
+    private ConfigurableJoint joint;
 
     private void Start()
     {
         motor = GetComponent<PlayerMotor>();
+        joint = GetComponent<ConfigurableJoint>();
     }
 
     private void Update()
