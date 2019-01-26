@@ -10,6 +10,14 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private float thrusterForce = 1000f;
 
+    [Header("Spring Setting: ")]
+    [SerializeField]
+    private JointDriveMode mode;
+    [SerializeField]
+    private float jointSpring;
+    [SerializeField]
+    private float jointMaxForce = 40;
+
     private PlayerMotor motor;
     private ConfigurableJoint joint;
 
