@@ -4,6 +4,7 @@
 public class PlayerMotor : MonoBehaviour {
     private Vector3 velocity = Vector3.zero;
     private Vector3 rotation = Vector3.zero;  // always init to zero
+    private Vector3 cameraRotation = Vector3.zero;
     private Rigidbody rb;
 
     private void Start()
@@ -18,15 +19,21 @@ public class PlayerMotor : MonoBehaviour {
     }
     
     // Gets a rotation vector
-    public void Rotation(Vector3 _rotation)
+    public void Rotate(Vector3 _rotation)
     {
         rotation = _rotation;
+    }
+
+    public void CameraRotate(Vector3 _cameraRotation)
+    {
+        cameraRotation = _cameraRotation;
     }
 
     private void FixedUpdate()
     {
         PerformMovement();
         PerformRotation();
+        PerformCameraRotation();
     }
 
     void PerformMovement()
@@ -40,5 +47,10 @@ public class PlayerMotor : MonoBehaviour {
     void PerformRotation()
     {
         rb.MoveRotation(rb.rotation * Quaternion.Euler(rotation));
+    }
+
+    void PerformCameraRotation()
+    {
+        rb.MoveRotation(rb.rotation * Quaternion.Euler(cameraRotation));
     }
 }
