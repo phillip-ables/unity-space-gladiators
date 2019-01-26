@@ -19,5 +19,12 @@ public class PlayerMotor : MonoBehaviour {
     {
         PerformMovement();
     }
-    
+
+    void PerformMovement()
+    {
+        if(velocity != Vector3.zero)
+        {
+            rb.MovePosition(rb.position + velocity * Time.deltaTime);
+        }
+    }
 }
