@@ -2,6 +2,7 @@
 using UnityEngine.Networking;
 
 public class PlayerSetup : NetworkBehaviour {
+    [SerializeField]
     Behaviour[] componentsToDisable;
 
     private void Start()

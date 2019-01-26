@@ -551,6 +551,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28c117f498de2ef4bb2a415741c2896e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  componentsToDisable:
+  - {fileID: 114862325505665118}
+  - {fileID: 114151022714505112}
+  - {fileID: 20277414980721382}
+  - {fileID: 81000646659970272}
 --- !u!114 &114832676230136558
 MonoBehaviour:
   m_ObjectHideFlags: 1
