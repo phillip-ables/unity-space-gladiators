@@ -12,8 +12,6 @@ public class PlayerController : MonoBehaviour {
 
     [Header("Spring Setting: ")]
     [SerializeField]
-    private JointProjectionMode jointMode = JointProjectionMode.PositionAndRotation;
-    [SerializeField]
     private float jointSpring = 20f;
     [SerializeField]
     private float jointMaxForce = 40;
@@ -65,6 +63,11 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetButton("Jump"))
         {
             _thrusterForce = Vector3.up * thrusterForce;
+            SetJoinSettings(0f);
+        }
+        else
+        {
+            SetJoinSettings(jointSpring);
         }
         motor.ApplyThruster(_thrusterForce);
     }
@@ -75,6 +78,5 @@ public class PlayerController : MonoBehaviour {
             positionSpring = _jointSpring,
             maximumForce = jointMaxForce
         };
-        joint.projectionMode = jointMode;
     }
 }
