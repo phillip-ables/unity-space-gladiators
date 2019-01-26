@@ -70,7 +70,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 56
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 49
+  controlID: 113
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -183,7 +183,7 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 421}
   m_MaxSize: {x: 4002, y: 8021}
   vertical: 1
-  controlID: 50
+  controlID: 114
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -398,7 +398,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fc2b0000
+    m_SelectedIDs: 22280000
     m_LastClickedID: 0
     m_ExpandedIDs: 18fbffff00000000
     m_RenameOverlay:
@@ -494,19 +494,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Art/Prefabs
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Art/Prefabs
+  - Assets/Scripts
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\phill\Desktop\code\unity-space-gladiators\spaceMultiplayer
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: fc2c0000
-    m_LastClickedID: 11516
+    m_SelectedIDs: 802c0000
+    m_LastClickedID: 11392
     m_ExpandedIDs: 000000003c2a00007c2a0000882a00008c2a0000062b00007e2f0000802f000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -695,14 +695,14 @@ MonoBehaviour:
     height: 372
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 563.7334294426956
+  lastFramingTime: 119.75501179281567
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: -0.5000051, z: 0}
+    m_Target: {x: -14.12, y: 1.5487332, z: -20.39}
     speed: 2
-    m_Value: {x: 0, y: -0.5000051, z: 0}
+    m_Value: {x: -14.12, y: 1.5487332, z: -20.39}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -730,13 +730,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: 0.23070028, y: -0.010221276, z: 0.0024230063, w: 0.9729715}
+    m_Target: {x: 0.119359255, y: -0.28183132, z: 0.035358265, w: 0.9513577}
     speed: 2
-    m_Value: {x: -0.23070028, y: 0.010221276, z: -0.0024230063, w: -0.9729715}
+    m_Value: {x: 0.11935883, y: -0.2818303, z: 0.03535814, w: 0.9513543}
   m_Size:
-    m_Target: 149.35007
+    m_Target: 2.8578837
     speed: 2
-    m_Value: 149.35007
+    m_Value: 2.8578837
   m_Ortho:
     m_Target: 0
     speed: 2
