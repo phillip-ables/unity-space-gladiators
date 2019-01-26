@@ -64,7 +64,6 @@
     <Compile Include="Assets\Extras\Standard Assets\ParticleSystems\Scripts\AfterburnerPhysicsForce.cs" />
     <Compile Include="Assets\Extras\Standard Assets\ParticleSystems\Scripts\ExplosionFireAndDebris.cs" />
     <Compile Include="Assets\Extras\Standard Assets\ParticleSystems\Scripts\ExplosionPhysicsForce.cs" />
-    <Compile Include="Assets\Extras\Standard Assets\ParticleSystems\Scripts\Explosive.cs" />
     <Compile Include="Assets\Extras\Standard Assets\ParticleSystems\Scripts\ExtinguishableParticleSystem.cs" />
     <Compile Include="Assets\Extras\Standard Assets\ParticleSystems\Scripts\FireLight.cs" />
     <Compile Include="Assets\Extras\Standard Assets\ParticleSystems\Scripts\Hose.cs" />
