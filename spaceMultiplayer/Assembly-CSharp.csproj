@@ -61,8 +61,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\PlayerMotor.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PlayerMotor.cs" />
     <None Include="Assets\Extras\modern-weapons\README.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/phill/Desktop/code/unity-space-gladiators/spaceMultiplayer/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
