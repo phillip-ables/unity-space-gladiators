@@ -70,6 +70,8 @@
     <Compile Include="Assets\Extras\Standard Assets\ParticleSystems\Scripts\ParticleSystemMultiplier.cs" />
     <Compile Include="Assets\Extras\Standard Assets\ParticleSystems\Scripts\SmokeParticles.cs" />
     <Compile Include="Assets\Extras\Standard Assets\ParticleSystems\Scripts\WaterHoseParticles.cs" />
+    <Compile Include="Assets\Scripts\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\PlayerMotor.cs" />
     <Compile Include="Assets\Scripts\PlayerSetup.cs" />
