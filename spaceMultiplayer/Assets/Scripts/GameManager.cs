@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour {
         return players[_playerID];
     }
 
+    /*
     private void OnGUI()
     {
         GUILayout.BeginArea(new Rect(200, 200, 200, 500));
@@ -35,4 +36,5 @@ public class GameManager : MonoBehaviour {
         GUILayout.EndVertical();
         GUILayout.EndArea();
     }
+    */
 }
