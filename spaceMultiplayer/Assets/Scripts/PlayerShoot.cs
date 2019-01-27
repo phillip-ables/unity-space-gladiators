@@ -1,16 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.Networking;
 
-public class PlayerShoot : MonoBehaviour {
+public class PlayerShoot : NetworkBehaviour {
+    [SerializeField]
+    private Camera cam;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void Start()
+    {
+        if(cam == null)
+        {
+            Debug.LogError("PlayerShoot: No camera referenced!");
+            this.enabled = false;
+        }
+    }
 }
