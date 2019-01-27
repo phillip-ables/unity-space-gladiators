@@ -15,4 +15,17 @@ public class PlayerShoot : NetworkBehaviour {
             this.enabled = false;
         }
     }
+
+    private void Update()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Shoot();
+        }
+    }
+
+    private void Shoot()
+    {
+
+    }
 }
