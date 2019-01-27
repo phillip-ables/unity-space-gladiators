@@ -2,6 +2,8 @@
 using UnityEngine.Networking;
 
 public class PlayerShoot : NetworkBehaviour {
+    public PlayerWeapon weapon;
+
     [SerializeField]
     private Camera cam;
 
