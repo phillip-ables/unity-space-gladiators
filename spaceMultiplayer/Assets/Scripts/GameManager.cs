@@ -17,6 +17,11 @@ public class GameManager : MonoBehaviour {
         players.Remove(_PlayerName);
     }
 
+    public static Player GetPlayer (string _playerID)
+    {
+        return players[_playerID];
+    }
+
     private void OnGUI()
     {
         GUILayout.BeginArea(new Rect(200, 200, 200, 500));
