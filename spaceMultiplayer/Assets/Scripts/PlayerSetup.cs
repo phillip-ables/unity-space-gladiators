@@ -24,13 +24,11 @@ public class PlayerSetup : NetworkBehaviour {
                 sceneCamera.gameObject.SetActive(false);
             }
         }
-        RegisterPlayer();
     }
 
-    void RegisterPlayer()
+    public override void OnStartClient()
     {
-        string _ID = "Player " + GetComponent<NetworkIdentity>().netId;
-        transform.name = _ID;
+        base.OnStartClient();
     }
 
     private void AssignRemoteLayer()
