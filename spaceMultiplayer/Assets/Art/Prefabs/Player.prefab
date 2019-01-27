@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 114054866854247444}
   - component: {fileID: 114341176724529574}
   - component: {fileID: 153529171826818030}
+  - component: {fileID: 114692233377622130}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -602,6 +603,17 @@ MonoBehaviour:
   - {fileID: 114151022714505112}
   - {fileID: 20277414980721382}
   - {fileID: 81000646659970272}
+--- !u!114 &114692233377622130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1282320153206720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e074bcbd0d6cf642bbdd8559c38576f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114832676230136558
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -646,6 +658,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 20277414980721382}
+  cameraRotationLimit: 85
 --- !u!135 &135219119331071022
 SphereCollider:
   m_ObjectHideFlags: 1
