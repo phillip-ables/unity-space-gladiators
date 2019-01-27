@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
 
+[RequireComponent(typeof(Player))]
 public class PlayerSetup : NetworkBehaviour {
     [SerializeField]
     Behaviour[] componentsToDisable;
@@ -55,5 +56,7 @@ public class PlayerSetup : NetworkBehaviour {
         {
             sceneCamera.gameObject.SetActive(true);
         }
+
+        GameManager.UnRegisterPlayer(transform.name);
     }
 }
