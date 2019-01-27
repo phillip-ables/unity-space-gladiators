@@ -27,6 +27,7 @@ public class PlayerShoot : NetworkBehaviour
         }
     }
 
+    [Client]
     private void Shoot()
     {
         RaycastHit _hit;
@@ -34,5 +35,11 @@ public class PlayerShoot : NetworkBehaviour
         {
             Debug.Log("We hit " + _hit.collider.name);
         }
+    }
+
+    [Command]
+    void CmdPlayerShot(string _ID)
+    {
+        Debug.Log(_ID + " has been shot");
     }
 }
