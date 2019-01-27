@@ -74,11 +74,11 @@ GameObject:
   - component: {fileID: 114862325505665118}
   - component: {fileID: 114151022714505112}
   - component: {fileID: 114395801466491846}
+  - component: {fileID: 114692233377622130}
   - component: {fileID: 114832676230136558}
   - component: {fileID: 114054866854247444}
   - component: {fileID: 114341176724529574}
   - component: {fileID: 153529171826818030}
-  - component: {fileID: 114692233377622130}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -603,6 +603,8 @@ MonoBehaviour:
   - {fileID: 114151022714505112}
   - {fileID: 20277414980721382}
   - {fileID: 81000646659970272}
+  - {fileID: 114692233377622130}
+  remoteLayerName: RemotePlayer
 --- !u!114 &114692233377622130
 MonoBehaviour:
   m_ObjectHideFlags: 1
