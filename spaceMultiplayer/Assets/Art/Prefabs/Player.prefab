@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4492546356717096}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   - component: {fileID: 4894317946707660}
   - component: {fileID: 20277414980721382}
   - component: {fileID: 81000646659970272}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -54,7 +54,7 @@ GameObject:
   - component: {fileID: 33132533294276112}
   - component: {fileID: 23707033144530360}
   - component: {fileID: 65625865956031890}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -79,9 +79,9 @@ GameObject:
   - component: {fileID: 114341176724529574}
   - component: {fileID: 153529171826818030}
   - component: {fileID: 114692233377622130}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,7 +97,7 @@ GameObject:
   - component: {fileID: 33739539650703834}
   - component: {fileID: 23194541009488758}
   - component: {fileID: 65379114467856804}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Clip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -114,7 +114,7 @@ GameObject:
   - component: {fileID: 4253922809061906}
   - component: {fileID: 33627556818512432}
   - component: {fileID: 23370619823082168}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -132,7 +132,7 @@ GameObject:
   - component: {fileID: 33571354809545014}
   - component: {fileID: 23568293700348122}
   - component: {fileID: 65725482739131578}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Barrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -147,7 +147,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4490341865397792}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -614,6 +614,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3e074bcbd0d6cf642bbdd8559c38576f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon:
+    name: Glock
+    damage: 20
+    range: 100
+  cam: {fileID: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!114 &114832676230136558
 MonoBehaviour:
   m_ObjectHideFlags: 1
