@@ -62,7 +62,19 @@ public class Player : NetworkBehaviour {
 
     public void SetDefaults()
     {
+        isDead = false;
+
         currentHealth = maxHealth;
+
+        for(int i = 0; i < disableOnDeath.Length; i++)
+        {
+            disableOnDeath[i].enabled = wasEnabled[i];
+        }
+
+        Collider _col = GetComponent<Collider>();
+        if (_col != null)
+            _col.enabled = true;
+
     }
 
 }
