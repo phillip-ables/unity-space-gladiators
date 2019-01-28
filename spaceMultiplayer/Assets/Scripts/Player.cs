@@ -21,6 +21,17 @@ public class Player : NetworkBehaviour {
     private Behaviour[] disableOnDeath;
     private bool[] wasEnabled;
 
+    public void Setup()
+    {
+        wasEnabled = new bool[disableOnDeath.Length];
+        for(int i = 0; i < wasEnabled.Length; i++)
+        {
+            wasEnabled[i] = disableOnDeath[i].enabled;
+        }
+
+        SetDefaults();
+    }
+
     private void Awake()
     {
         SetDefaults();
