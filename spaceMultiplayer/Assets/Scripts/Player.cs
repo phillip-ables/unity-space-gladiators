@@ -17,6 +17,10 @@ public class Player : NetworkBehaviour {
     [SyncVar]
     private int currentHealth;
 
+    [SerializeField]
+    private Behaviour[] disableOnDeath;
+    private bool[] wasEnabled;
+
     private void Awake()
     {
         SetDefaults();
