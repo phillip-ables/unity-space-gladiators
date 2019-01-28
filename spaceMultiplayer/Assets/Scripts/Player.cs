@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.Networking;
+using System.Collections;
 
 public class Player : NetworkBehaviour {
 
@@ -67,6 +68,16 @@ public class Player : NetworkBehaviour {
         Debug.Log(transform.name + " is DEAD!");
 
         //call respawn method
+        StartCoroutine(Respawn());
+    }
+
+    private IEnumerator Respawn()
+    {
+        yield return new WaitForSeconds(3f);
+        SetDefaults();
+        Transform _spawnPoint = NetworkManager.singleton.GetStartPosition();
+        transform.position = _spawnPoint.position;
+        transform.rotation = _spawnPoint.rotation;
     }
 
     public void SetDefaults()
