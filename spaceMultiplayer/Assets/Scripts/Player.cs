@@ -3,6 +3,14 @@ using UnityEngine.Networking;
 
 public class Player : NetworkBehaviour {
 
+    [SyncVar]
+    private bool _isDead = false;
+    public bool isDead
+    {
+        get { return _isDead;  }
+        protected set { _isDead = value;  }
+    }
+
     [SerializeField]
     private int maxHealth = 100;
 
@@ -14,10 +22,17 @@ public class Player : NetworkBehaviour {
         SetDefaults();
     }
 
-    public void TakeDamage(int _amount)
+    [ClientRpc]
+    public void RpcTakeDamage(int _amount)
     {
+        if (isDead)
+            return;
         currentHealth -= _amount;
         Debug.Log(transform.name + " now has " + currentHealth + " health.");
+        if(currentHealth <- 0)
+        {
+            Die();
+        }
     }
 
     public void SetDefaults()
