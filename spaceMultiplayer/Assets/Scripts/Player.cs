@@ -53,7 +53,16 @@ public class Player : NetworkBehaviour {
     private void Die()
     {
         isDead = true;
+        
         //Disable components
+        for(int i = 0; i < disableOnDeath.Length; i++)
+        {
+            disableOnDeath[i].enabled = false;
+        }
+
+        Collider _col = GetComponent<Collider>();
+        if (_col != null)
+            _col.enabled = false;
 
         Debug.Log(transform.name + " is DEAD!");
 
