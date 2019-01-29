@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 
+[RequireComponent(typeof(Animator))]
 [RequireComponent(typeof(ConfigurableJoint))]
 [RequireComponent(typeof(PlayerMotor))]
 public class PlayerController : MonoBehaviour {
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private float jointMaxForce = 40;
 
+    private Animator animator;
     private PlayerMotor motor;
     private ConfigurableJoint joint;
 
