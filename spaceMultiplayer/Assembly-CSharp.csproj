@@ -80,6 +80,7 @@
     <Compile Include="Assets\Scripts\PlayerWeapon.cs" />
     <None Include="Assets\Extras\Standard Assets\Prototyping\Shaders\WorldCoordDiffuse.shader" />
     <None Include="Assets\Extras\Standard Assets\ParticleSystems\Shaders\PriorityParticleAlpha.shader" />
+    <None Include="Assets\multiplayer-fps-assets\README.txt" />
     <None Include="Assets\Extras\Standard Assets\ParticleSystems\ParticleSystemsGuidelines.txt" />
     <None Include="Assets\Extras\Standard Assets\ParticleSystems\Shaders\PriorityParticleAddSoft.shader" />
     <None Include="Assets\Extras\modern-weapons\README.txt" />

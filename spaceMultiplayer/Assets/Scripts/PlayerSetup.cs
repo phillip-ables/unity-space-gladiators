@@ -29,16 +29,6 @@ public class PlayerSetup : NetworkBehaviour {
         GetComponent<Player>().Setup();
     }
 
-    private void Update()
-    {
-        if (!isLocalPlayer)
-            return;
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            GetComponent<Player>().RpcTakeDamage(9999);
-        }
-    }
-
     public override void OnStartClient()
     {
         base.OnStartClient();
